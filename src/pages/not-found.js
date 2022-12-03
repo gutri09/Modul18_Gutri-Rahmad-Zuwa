@@ -21,7 +21,6 @@ const NotFound = () => {
           
           <p>the page you are looking for not avaible!</p>
           
-          <a href="http://localhost:3000" class="link_404">Go to Home</a>
         </div>
           </div>
           </div>

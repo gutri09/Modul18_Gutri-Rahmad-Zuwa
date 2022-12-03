@@ -34,7 +34,7 @@ const Register = () => {
       const password = data.get('password')
       const email = data.get('email')
       if (username!='' && password!='' && email!='') {
-        axios.post('http://localhost:1009/register', {
+        axios.post('https://modul17gutri-rahmad-zuwa-production.up.railway.app/register', {
           username: username,
           email   : email,
           password: password
