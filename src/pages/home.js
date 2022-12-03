@@ -46,7 +46,7 @@ const Home = () => {
         // set isLogin menjadi true. bila tidak, redirect ke halaman login
         const verify = async() =>{
             try {
-              const response = await axios.post('https://modul17gutri-rahmad-zuwa-production.up.railway.app/verify', {
+              const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/verify`, {
                 token: localStorage.getItem('token')
               })
               if(response.status == 200){
